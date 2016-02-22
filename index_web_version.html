@@ -1,0 +1,47 @@
+<!doctype html>
+<html ng-app="todoApp">
+  <head>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    
+
+    <style>
+    body {
+      padding: 40px 20px 0 20px;
+    }
+    </style>
+
+  </head>
+  <body>
+  <div id="fb-root"></div>
+  <script src="http://connect.facebook.net/en_US/all.js"></script>
+  <script>
+      FB.init({
+          appId      : 'XXXX', 
+          xfbml      : true,
+          version    : 'v1.0'
+      });
+  </script>
+  <h2>Todos</h2>  
+  <div ng-view></div>
+
+
+
+    <!-- this is for phonegap -->
+    <!-- <script src="cordova.js"></script> -->
+    <!-- cordova facebook plugin -->
+    <!--  <script src="cdv-plugin-fb-connect.js"></script> -->
+    <!-- facebook js sdk -->
+    <!-- <script src="facebook-js-sdk.js"></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.7/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.7/angular-route.min.js"></script>
+    <!-- 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.7/angular-touch.min.js"></script>
+    -->
+    <script src="js/controllers/todo.js"></script>
+    <script src="js/controllers/user.js"></script>
+    <script src="js/services/todo.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
